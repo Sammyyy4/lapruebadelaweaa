@@ -1,18 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Sam diary</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {color: #f2fdff;}
-h1   {color: #101935;}
-p    {color: #564787;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #bee1e6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
 
-<h1>My favorites songs!</h1>
-<p>recopilación de mis canciones favoritas </p>
-<p>hay de todo aquí</p>
+<h2>La vida de un chico trans</h2>
+<p>Muchas veces me gustaría ser normal</p>
+<p>Es dificil sentirse de esta manera todos los días, sentir que no encajas con los demás</p>
+
+<header>
+  <h2>¿Qué me detiene de poder hacer mi trancisión en paz?</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Mi familia</a></li>
+      <li><a href="#">El dinero</a></li>
+      <li><a href="#">El miedo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>¿Cómo me doy animos?</h1>
+    <p>Intento pensar que en algún momento podre libremente como Samuel y no como Renata.</p>
+    <p>¿Pero que hago si me miro todos los días al espejo y me odio?</p>
+    <p>Me gustaría ser como los otros chicos, poder vestirme como quiera, poder cortarme el pelo libremente sin tener a una madre detras de ti diciendote que te ves horrible</p>
+  </article>
+</section>
+
+<footer>
+  <p>Bajada</p>
+</footer>
 
 </body>
 </html>
+ 
+
+
 
